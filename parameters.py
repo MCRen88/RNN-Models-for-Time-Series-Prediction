@@ -5,13 +5,13 @@ import os
 
 # select OHLC data
 OHLC = 5
-DATA_SIZE = 1000
+DATA_SIZE = 10000
 
 # data info
-FILE_NAME = './data/EURUSD30.csv'
+FILE_NAME = './data/EURUSDDAILY.csv'
 FEATURE_RANGE = (-1,1)
-WINDOW_SIZE = 20
-FORECAST_SIZE = 5
+WINDOW_SIZE = 100
+FORECAST_SIZE = 30
 
 #LSTM settings 
 BATCH_SIZE = 30
