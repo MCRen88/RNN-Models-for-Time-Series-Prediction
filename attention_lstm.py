@@ -153,6 +153,7 @@ def plot_tensor_data(real, pred):
     plt.figure(figsize=(15,6))
     plt.plot(img_real)
     plt.plot(img_pred, color='darkorange')
+    return img_pred,img_real
 
 # run test
 tf_test = tf.data.Dataset.from_tensor_slices(test_data).window(size=time_step+shift, 
@@ -161,9 +162,13 @@ testd = tf_test.map(lambda x: tf.reshape(x[:time_step],[time_step,1]))
 testl = tf_test.map(lambda x: x[-shift:])
 
 # comapare test and train dataset with their respective prediction
+# print MAE, MAPE
 '''
-plot_tensor_data(train_data[-220:], evaluate(tdata))
-plot_tensor_data(test_data[30:], evaluate(testd))
+pred_train, real_train = plot_tensor_data(train_data[-220:], evaluate(tdata))
+pred_test, real_test = plot_tensor_data(test_data[30:], evaluate(testd))
+
+print(tf.keras.losses.mean_absolute_percentage_error(1+real_test.T, 1+pred_test.T))
+print(tf.keras.losses.mean_absolute_error(real_test.T, pred_test.T))
 '''
 
 sns.set(rc={'figure.figsize':(10,5)})
@@ -181,3 +186,4 @@ def plot_weights(data):
 
 # you can call plot_weights to see what the model pays attention to predicting next value
 # plot_weights(test_data[250:280])
+
