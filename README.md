@@ -1,3 +1,3 @@
-# RNN-Architectures-for-Time-Series-Prediction
-Implementation of different RNN architectures for Time Series Predition of Currency Markets. 
-Paper Coming Soon. 
+# Attention Based RNN for Time Series Prediction
+Attention Based Recurrent Neural Model which can predict future market movements based on fundamental and technical economic data. Model can make calculated decisions of future currency movements by paying attention to most relevant economic data.
+## Full Code and Research Paper Will be Released Soon
