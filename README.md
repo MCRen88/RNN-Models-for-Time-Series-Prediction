@@ -10,6 +10,7 @@ In this project I experimented with different architectures of Recurrent Neural 
 
 ![alt text](https://github.com/vinit97/Attention-Based-RNN-for-Time-Series-Prediction/blob/master/Pics/lstm_attention.png)
 
+##### Read the Prediction Report for more information. 
 ##### Note: Orange is prediction, Blue is real data
 ### 1. LSTM with Residual Connections
 
@@ -26,5 +27,3 @@ Results: MAE: 0.02462221 MAPE: 1.73296783 %
 ### Example of Attention Weights during Prediction:
 
 ![alt text](https://github.com/vinit97/Attention-Based-RNN-for-Time-Series-Prediction/blob/master/Pics/attention_weight.png)
-
-Read the Prediction Report for more information. 
