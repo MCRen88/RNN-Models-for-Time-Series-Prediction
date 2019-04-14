@@ -10,7 +10,7 @@ In this project I experimented with different architectures of Recurrent Neural 
 
 ![alt text](https://github.com/vinit97/Attention-Based-RNN-for-Time-Series-Prediction/blob/master/Pics/lstm_attention.png)
 
-#### Read the Prediction Report for more information. 
+### Read the Prediction Report for more information. 
 ##### Note: Orange is prediction, Blue is real data
 ### 1. LSTM with Residual Connections
 
