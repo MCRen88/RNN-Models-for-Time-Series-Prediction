@@ -1,5 +1,6 @@
 # RNN Models for Time Series Prediction
 Implementation of different RNN architectures for Time Series Prediction for Currency Markets. 
+#### Read the Prediction Report for more information. 
 
 In this project I experimented with different architectures of Recurrent Neural Networks (RNNs) for Time Series Prediction. The data I used consist of Daily EURUSD prices. The architectures, I will be implementing and comparing are:
 
@@ -10,7 +11,6 @@ In this project I experimented with different architectures of Recurrent Neural 
 
 ![alt text](https://github.com/vinit97/Attention-Based-RNN-for-Time-Series-Prediction/blob/master/Pics/lstm_attention.png)
 
-### Read the Prediction Report for more information. 
 ##### Note: Orange is prediction, Blue is real data
 ### 1. LSTM with Residual Connections
 
